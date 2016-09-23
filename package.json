@@ -1,0 +1,23 @@
+{
+  "name": "generdate",
+  "version": "1.0.0",
+  "description": "Generate dates at an interval between start and end dates.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoryNunn/generdate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KoryNunn/generdate/issues"
+  },
+  "homepage": "https://github.com/KoryNunn/generdate#readme"
+}
