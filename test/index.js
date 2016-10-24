@@ -50,3 +50,12 @@ test('years', function(t){
 
     t.equal(results.length, 2);
 });
+
+test('get frequencies', function(t){
+    t.plan(2);
+
+    var results = generdate.frequencies();
+
+    t.ok(Array.isArray(results));
+    t.ok(results.length > 4);
+});

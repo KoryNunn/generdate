@@ -55,3 +55,5 @@ function generateDates(start, end, interval){
 }
 
 module.exports = generateDates;
+
+module.exports.frequencies = Object.keys.bind(null, nexts);

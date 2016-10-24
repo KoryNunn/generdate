@@ -24,3 +24,5 @@ results.length; -> 600
 Generdate should handle boundaries pretty ok, for example,
 repeating once per month with the start date set to the 31st will
 result in whatever the given dates max date is, inc 28th feb on leap years.
+
+The list of supported frequencies is available via `generdate.frequencies()`
