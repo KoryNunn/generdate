@@ -1,6 +1,6 @@
 {
   "name": "generdate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Generate dates at an interval between start and end dates.",
   "main": "index.js",
   "scripts": {
