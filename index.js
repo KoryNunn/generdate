@@ -10,10 +10,10 @@ function nextFortnight(currentDate, startDate, lastDate){
     currentDate.setDate(currentDate.getDate() + 14);
 }
 
-function nextMonth(currentDate, startDate, lastDate){
-    currentDate.setMonth(currentDate.getMonth() + 1);
+function nextNMonths(months, currentDate, startDate, lastDate) {
+    currentDate.setMonth(currentDate.getMonth() + months);
     currentDate.setDate(startDate.getDate());
-    if(currentDate.getMonth() - lastDate.getMonth() > 1){
+    if(currentDate.getMonth() - lastDate.getMonth() > months){
         currentDate.setDate(0);
     }
 }
@@ -26,7 +26,9 @@ var nexts = {
     day: nextDay,
     week: nextWeek,
     fortnight: nextFortnight,
-    month: nextMonth,
+    month: nextNMonths.bind(null, 1),
+    quarter: nextNMonths.bind(null, 3),
+    halfYear: nextNMonths.bind(null, 6),
     year: nextYear
 };
 
